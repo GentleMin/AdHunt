@@ -68,7 +68,7 @@ class Messenger:
         <html><head></head>
         <body>
         """
-        o_str += "<p>{}</p>".format(self.msg_header)
+        o_str += "{}".format(self.msg_header)
         o_str += """
         <table border=\"1\" style=\"border-collapse: collapse;\">
             <tr>
@@ -97,7 +97,7 @@ class Messenger:
             )
             o_str += pos_line
         o_str += "</table>"
-        o_str += "<br /><p>{}</p></body></html>".format(self.msg_footer)
+        o_str += "{}</body></html>".format(self.msg_footer)
         return o_str
     
     def build_email_message(self) -> EmailMessage:
